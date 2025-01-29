@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Zıplama Animasyonu</title>
     <style>
+        /* Sayfa arka planını siyah yap */
         body {
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: black; /* Arka plan siyah olacak */
+            overflow: hidden; /* Taşan alanları gizler */
         }
+
+        /* Canvas'ı ekran boyutuna göre genişlet */
         canvas {
-            border: 1px solid black;
+            display: block; /* Canvas'ın dışındaki boşlukları kaldırır */
+            background-color: black; /* Canvas'ın arka planını siyah yap */
         }
     </style>
 </head>
 <body>
-    <canvas id="canvas" width="600" height="600"></canvas>
+    <canvas id="canvas"></canvas>
 
     <script src="script.js"></script>
 </body>
