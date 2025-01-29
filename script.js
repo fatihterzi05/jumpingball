@@ -6,8 +6,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 // Dairenin yarıçapı
-const radius = Math.min(canvas.width, canvas.height) / 9;  
-const ballRadius = 35;  // Topun yarıçapı sabit kalacak
+const radius = Math.min(canvas.width, canvas.height) / 7;  
+const ballRadius = 30;  // Topun yarıçapı sabit kalacak
 let x = canvas.width / 2;  // Topun X koordinatı, ekranın ortasında
 let y = canvas.height / 2 - 100;  // Topun Y koordinatı (başlangıçta biraz yukarıda)
 let speedX = 8;  // Topun X yönündeki hızını artırdık (daha hızlı hareket etmesi için)
